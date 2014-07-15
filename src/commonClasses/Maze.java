@@ -9,7 +9,7 @@ import java.util.Set;
 public class Maze {
     private Set _rooms = new HashSet();
 
-    Maze() {
+    public Maze() {
         System.out.println("Creating a Maze");
     }
     public void addRoom(Room r) {

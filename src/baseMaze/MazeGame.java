@@ -16,6 +16,9 @@ public class MazeGame {
         aMaze.addRoom(r1);
         aMaze.addRoom(r2);
 
+        r1.setSide(Direction.North, new Wall());
+        r1.setSide(Direction.North, new Wall());
+
         return aMaze;
     }
 }
