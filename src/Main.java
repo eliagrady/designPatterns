@@ -3,7 +3,7 @@ import baseMaze.MazeGame;
 public class Main {
 
     public static void main(String[] args) {
-        factoryMethod();
+        basicMaze();
     }
 
     private static void basicMaze() {

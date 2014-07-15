@@ -1,8 +1,6 @@
 package baseMaze;
 
-import commonClasses.Door;
-import commonClasses.Maze;
-import commonClasses.Room;
+import commonClasses.*;
 
 /**
  * Created by Elia on 15/07/2014.
@@ -17,7 +15,14 @@ public class MazeGame {
         aMaze.addRoom(r2);
 
         r1.setSide(Direction.North, new Wall());
-        r1.setSide(Direction.North, new Wall());
+        r1.setSide(Direction.East, theDoor);
+        r1.setSide(Direction.South, new Wall());
+        r1.setSide(Direction.West, new Wall());
+
+        r2.setSide(Direction.North, new Wall());
+        r2.setSide(Direction.East, new Wall());
+        r2.setSide(Direction.South, new Wall());
+        r2.setSide(Direction.West, theDoor);
 
         return aMaze;
     }
